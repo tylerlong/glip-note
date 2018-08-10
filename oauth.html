@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+      window.parent.postMessage({
+        type: 'REDIRECT_URI',
+        redirectUri: window.location.href
+      }, window.location.origin)
+    </script>
+  </body>
+</html>
